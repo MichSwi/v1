@@ -1,3 +1,18 @@
+@media all and (max-width:1600px){
+	html{
+		width:1518px;
+	}
+}
+
+@media all and (min-width:(1601px) and (max-width:2500px){
+	html{
+		width:2000px;
+	}
+}
+
+
+
+
 html {
     margin:0;
     padding:0px 0px 0px 0px;
