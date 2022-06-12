@@ -1,0 +1,215 @@
+<!DOCTYPE html >
+
+<html>
+	<head>	
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+		</script>
+	
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
+
+		<script>
+			function zegarek() {
+				var data = new Date();
+				var godzina = data.getHours();
+				var minuta = data.getMinutes();
+				var sekunda = data.getSeconds();
+				var dzien = data.getDate();
+				var dzienN = data.getDay();
+				var miesiac = data.getMonth();
+				var rok = data.getFullYear();
+			
+				if (minuta < 10) minuta = "0" + minuta;
+				if (sekunda < 10) sekunda = "0" + sekunda;
+           
+				var dni = new Array("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota");
+				var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+           
+				var pokazDate = "Dzisiaj jest " + dni[dzienN] + ', ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " roku.<br />Godzina " + godzina + ':' + minuta + ':' + sekunda;
+				document.getElementById("zegar").innerHTML = pokazDate;
+           
+				setTimeout(zegarek, 1000);            
+			}        
+		</script>
+  
+		<link rel="icon" type="image/png-icon" href="logo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	
+		<title>FOTO STUDIO MS</title>
+	
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Cennik"/>
+		<meta name="Keywords" content="MS FOTO STUDIO, FOTO STUDIO, fotografia, studio, studio fotograficzne, sesja, sesja zdjeciowa, fotograf, cena, cennik"/>
+		<meta name="Author" content="Michał Święch"/>
+	</head>
+  
+	<body onload="zegarek()">
+		<div id="glowny">	
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" style:text-decoration:none;>Strona główna</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="cennik.html"><u>Cennik</u></a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+	
+			<div id="naglowek">
+				<div id="zegar">
+				</div>
+		
+				<div id="logo">
+					<a href="index.html">
+					<svg height="150" width="150" viewBox="0 0 300 300">
+						<rect x="50" y="50" rx="50" ry="50" width="200" height="200"
+						style="fill:white;stroke:black;stroke-width:10;opacity:2" />
+						<circle cx="150" cy="150" r="70" stroke="black" stroke-width="10" fill="white" /> 
+						<circle cx="210" cy="74" r="10" stroke="black" stroke-width="0" fill="black" /> 
+						<circle cx="150" cy="150" r="50" stroke="black" stroke-width="5" fill="white" /> 
+						<polygon points="150,160 100,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+						<polygon points="150,160 200,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+						<polygon points="150,200 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+						<polygon points="150,100 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" /> 
+						<text fill="White" font-size="30" font-family="serif"; x="30" y="290">FOTO STUDIO MS</text>
+					</svg>
+					</a>
+				</div>
+			</div>
+			
+			<div id="cennik">
+				<h1> <br>Zdjęcia z plików cyfrowych i negatywów 35mm </h1>
+				
+				<table>
+					<tr>
+						<th></th>
+						<th>ilość</th>
+						<th>1-150</th>
+						<th>151-300</th>
+						<th>301-450</th>
+						<th>451-600</th>
+						<th>>601</th>
+					</tr>
+					<tr>
+						<td>format</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9 x 13</td>
+						<td></td>
+						<td>1,10zł</td>
+						<td>1,05zł</td>
+						<td>1,00zł</td>
+						<td>0,95zł</td>
+						<td>0,90zł</td>
+					</tr>
+					<tr>
+						<td>10 x 15</td>
+						<td></td>
+						<td>1,10zł</td>
+						<td>1,05zł</td>
+						<td>1,00zł</td>
+						<td>0,95zł</td>
+						<td>0,90zł</td>
+					</tr>
+					<tr>
+						<td>11 x 15</td>
+						<td></td>
+						<td>1,20zł</td>
+						<td>1,15zł</td>
+						<td>1,10zł</td>
+						<td>1,05zł</td>
+						<td>1,00zł</td>
+					</tr>
+					<tr>
+						<td>13 x 18</td>
+						<td></td>
+						<td>2,50zł</td>
+						<td>2,40zł</td>
+						<td>2,30zł</td>
+						<td>2,20zł</td>
+						<td>2,10zł</td>
+					</tr>
+					<tr>
+						<td>15 x 21</td>
+						<td></td>
+						<td>3,00zł</td>
+						<td>2,90zł</td>
+						<td>2,80zł</td>
+						<td>2,70zł</td>
+						<td>2,60zł</td>
+					</tr>
+					<tr>
+						<td>18 x 24</td>
+						<td></td>
+						<td>10,00zł</td>
+						<td>9,50zł</td>
+						<td>9,00zł</td>
+						<td>8,50zł</td>
+						<td>8,00zł</td>
+					</tr>
+					<tr>
+						<td>21 x 30</td>
+						<td></td>
+						<td>10,00zł</td>
+						<td>9,50zł</td>
+						<td>9,00zł</td>
+						<td>8,50zł</td>
+						<td>8,00zł</td>
+					</tr>
+				</table>
+
+				<h1> <br>Profesjonalna sesja zdjeciowa </h1>
+
+				$$ \Large{cena= 1500zł + (czas\text{ }pracy) + (eksploatacja\text{ }studia) + (sesja\text{ }poza\text{ }studiem) + (produkcja\text{ }sesji)} $$
+
+				<p style="font-size:22px; margin-bottom:0px;">Gdzie:</p>
+				<p style="margin: 15px 0px 0px 0px;"><i>czas pracy:</i></p>
+				<p style="margin:0px;">
+					500zł  za ponad 4 godziny pracy,<br>
+					1000zł za ponad 6 godzin pracy,<br>
+					1500zł do 8 godzin pracy,<br>
+					1500zł + 150zł * (każda kolejna godzina pracy po przekroczeniu 8 godziny)
+				</p>
+				<p style="margin: 15px 0px 0px 0px;"><i>eksploatacja studia:</i></p>
+				<p style="margin: 0px ;">
+					0zł   za brak wykorzystania studia,<br>
+					300zł za eksploatację studia do 2 godziny,<br>
+					400zł za eksploatację studia do 4 godzin,<br>
+					400zł + 50zł * (każda kolejna godzina eksploatacji studia po przekroczeniu 4 godzin),
+				</p>
+				<p style="margin: 15px 0px 0px 0px;"><i>sesja poza studiem:</i></p>
+				<p style="margin: 0px;">
+					od 200zł za sesję poza studiem,<br>
+					od 1200zł za sesję pod wodą,
+				</p>
+				<p style="margin: 15px 0px 0px 0px;"><i>produkcja sesji:</i></p>
+				<p style="margin: 0px 0px 30px 0px;">
+					od 1000zł za pracę koncepcyjną, organizację modelek i modeli, casting, szukanie lokalizacji na sesję itp.
+				</p>
+	
+				<h1> Usługi dodatkowe</h1>
+				<p> 
+					20 zł (od zdjęcia) obróbka – wyczyszczenie tła, dodanie cienia/odbicia<br><br>
+					50 zł (od zdjęcia) obróbka – wyczyszczenie tła, dodanie cienia/odbicia, wygładzenie skóry, poprawienie koloru skóry<br><br>
+					100 zł (od zdjęcia) obróbka – wyczyszczenie tła, dodanie cienia/odbicia, zaawansowana obróbka kolorystyczna,<br> dorobienie włosów, wydłużenie nóg, wymodelowanie plastyki twarzy, wyrównanie fałd i zagnieceń<br><br>
+					od 150 – 300 zł (od zdjęcia) – zaawansowany retusz typu beauty<br><br>
+					od 300 zł – makijaż i fryzura<br><br>
+					od 700 zł – stylista<br><br>
+					od 1000 zł – scenograf<br><br>
+				</p>
+			</div>
+			
+			<div id="stopka">
+				<p>© 2022 FOTO-STUDIO-MS.pl </p>
+			</div>
+		</div>
+	</body>
+</html>
+
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html >
+
+<html>
+	<head>	 
+		<link rel="icon" type="image/png-icon" href="logo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<title>FOTO STUDIO MS</title>
+	
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Portfolio"/>
+		<meta name="Keywords" content="MS FOTO STUDIO, FOTO STUDIO, fotografia, studio, studio fotograficzne, sesja, sesja zdjeciowa, fotograf, portfolio, zdjecia MS STUDIO"/>
+		<meta name="Author" content="Michał Święch"/>
+		
+		<script>
+			function zegarek(){
+				var data = new Date();
+				var godzina = data.getHours();
+				var minuta = data.getMinutes();
+				var sekunda = data.getSeconds();
+				var dzien = data.getDate();
+				var dzienN = data.getDay();
+				var miesiac = data.getMonth();
+				var rok = data.getFullYear();
+           
+				if (minuta < 10) minuta = "0" + minuta;
+				if (sekunda < 10) sekunda = "0" + sekunda;
+           
+				var dni = new Array("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota");
+				var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+           
+				var pokazDate = "Dzisiaj jest " + dni[dzienN] + ', ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " roku.<br />Godzina " + godzina + ':' + minuta + ':' + sekunda;
+				document.getElementById("zegar").innerHTML = pokazDate;
+           
+				setTimeout(zegarek, 1000);            
+			}        
+		</script>
+	</head>
+	
+	<body onload="zegarek()">
+		<div id="glowny">	
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" style:text-decoration:none;>Strona główna</a></li>
+					<li><a href="portfolio.html"><u>Portfolio</u></a></li>
+					<li><a href="cennik.html">Cennik</a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+	
+			<div id="naglowek">
+				<div id="zegar">
+				</div>
+				
+				<div id="logo">
+					<a href="index.html">
+						<svg height="150" width="150" viewBox="0 0 300 300">
+							<rect x="50" y="50" rx="50" ry="50" width="200" height="200" style="fill:white;stroke:black;stroke-width:10;opacity:2" />
+							<circle cx="150" cy="150" r="70" stroke="black" stroke-width="10" fill="white" />
+							<circle cx="210" cy="74" r="10" stroke="black" stroke-width="0" fill="black" />
+							<circle cx="150" cy="150" r="50" stroke="black" stroke-width="5" fill="white" />
+							<polygon points="150,160 100,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,160 200,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,200 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,100 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<text fill="White" font-size="30" font-family="serif"; x="30" y="290">FOTO STUDIO MS</text>
+						</svg>
+					</a>
+				</div>
+			</div>
+	
+			<div id="tekst">
+				<p>
+					Za sobą mamy lata doświadczenia, które mówi nam, że do każdego klienta powinno podchodzić indywidualnie.<br>
+					Za nami jest wiele sesji, lecz wiemy że klienci potrafią nas zaskoczyć. <br>
+					Chętnie podejmiemy się każdego wyzwania, co da nam ciekawe wspomnienia i doświadczenie.
+				</p>
+			</div>	
+			
+			<div id="galerie">	
+				<div id="galeria1">
+					<figure class="zdjecie">
+						<img src="pies Rubin.jpg" alt="Pies Rubin">
+						<figcaption>
+							Piesek Rubin
+						</figcaption>
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="5.jpg" alt="Pies i kot">
+						<figcaption>
+							Pies i kot
+						</figcaption> 
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="6.jpg" alt="Szczeniaczek">
+						<figcaption>
+							Szczeniaczek
+						</figcaption> 
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="7.jpg" alt="Piesek Cziko">
+						<figcaption>
+							Piesek Cziko
+						</figcaption> 
+					</figure>
+				</div>
+	
+				<div id="galeria2">
+					<figure class="zdjecie">
+						<img src="o1.jpg" alt="Koło w błocie">
+						<figcaption>
+							Koło w błocie
+						</figcaption>
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="o2.jpg" alt="Przód auta">
+						<figcaption>
+							Przód auta
+						</figcaption> 
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="o3.jpg" alt="Auto w terenie">
+						<figcaption>
+							Auto w terenie
+						</figcaption>
+					</figure>
+					
+					<figure class="zdjecie">
+						<img src="o4.jpg" alt="Auto w lesie">
+						<figcaption>
+							Auto w lesie
+						</figcaption> 
+					</figure>
+				</div>
+	
+				<div id="galeria3">
+					<figure class="zdjecie">
+						<img src="s1.jpg" alt="Młoda para pod parasolem">
+							<figcaption>
+								Młoda para pod parasolem
+							</figcaption>
+					</figure>
+					
+					<figure class="zdjecie">
+						<img src="s2.jpg" alt="Nowożeńcy">
+						<figcaption>
+							Nowożeńcy
+						</figcaption> 
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="s3.jpg" alt="Państwo młodzi">
+						<figcaption>
+							Państwo młodzi
+						</figcaption>
+					</figure>
+					
+					<figure class="zdjecie">
+						<img src="s4.jpg" alt="Panna młoda">
+						<figcaption>
+							Panna młoda
+						</figcaption> 
+					</figure>
+				</div>
+	
+				<div id="galeria4">
+					<figure class="zdjecie">
+						<img src="blant.jpg" alt="Kotek Blancik">
+						<figcaption>
+							Kotek Blancik
+						</figcaption>
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="2.jpg" alt="Kotek Puszek">
+						<figcaption>
+							Kotek Puszek
+						</figcaption> 
+					</figure>
+  
+					<figure class="zdjecie">
+						<img src="1.jpg" alt="Kotek Okruszek">
+						<figcaption>
+							Kotek Okruszek
+						</figcaption>
+					</figure>
+					
+					<figure class="zdjecie">
+						<img src="3.jpg" alt="Kotek Mruczek">
+						<figcaption>
+							Kotek Mruczek
+						</figcaption> 
+					</figure>
+				</div>
+			</div>
+	
+			<div id="stopka">
+				<p>© 2022 FOTO-STUDIO-MS.pl </p>
+			</div>
+		</div> <!--glowny-->
+	</body>
+</html>
+	

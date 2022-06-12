@@ -1,0 +1,128 @@
+<!DOCTYPE html >
+
+<html>
+	<head>	
+		<link rel="icon" type="image/png-icon" href="logo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<title>FOTO STUDIO MS</title>
+		
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Kontakt"/>
+		<meta name="Keywords" content="MS FOTO STUDIO, FOTO STUDIO, fotografia, studio, studio fotograficzne, sesja, sesja zdjeciowa, fotograf, kontakt, numer telefonu"/>
+		<meta name="Author" content="Michał Święch"/>
+		
+		<script>
+			function zegarek() {
+				var data = new Date();
+				var godzina = data.getHours();
+				var minuta = data.getMinutes();
+				var sekunda = data.getSeconds();
+				var dzien = data.getDate();
+				var dzienN = data.getDay();
+				var miesiac = data.getMonth();
+				var rok = data.getFullYear();
+           
+				if (minuta < 10) minuta = "0" + minuta;
+				if (sekunda < 10) sekunda = "0" + sekunda;
+           
+				var dni = new Array("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota");
+				var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+           
+				var pokazDate = "Dzisiaj jest " + dni[dzienN] + ', ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " roku.<br />Godzina " + godzina + ':' + minuta + ':' + sekunda;
+				document.getElementById("zegar").innerHTML = pokazDate;
+           
+				setTimeout(zegarek, 1000);            
+			}        
+		</script>
+	</head>
+	
+	<body onload="zegarek()">
+		<div id="glowny">		
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" style:text-decoration:none;>Strona główna</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="cennik.html">Cennik</a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="kontakt.html"><u>Kontakt</u></a></li>
+				</ul>
+			</div>
+	
+			<div id="naglowek">
+				<div id="zegar">
+				</div>
+				
+				<div id="logo">
+					<a href="index.html">
+						<svg height="150" width="150" viewBox="0 0 300 300">
+							<rect x="50" y="50" rx="50" ry="50" width="200" height="200" style="fill:white;stroke:black;stroke-width:10;opacity:2" />
+							<circle cx="150" cy="150" r="70" stroke="black" stroke-width="10" fill="white" />
+							<circle cx="210" cy="74" r="10" stroke="black" stroke-width="0" fill="black" />
+							<circle cx="150" cy="150" r="50" stroke="black" stroke-width="5" fill="white" />
+							<polygon points="150,160 100,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,160 200,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,200 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,100 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<text fill="White" font-size="30" font-family="serif"; x="30" y="290">FOTO STUDIO MS</text>
+						</svg>
+					</a>
+				</div>
+			</div>
+	
+			<div id="kontakt">
+				<h1 style="margin:0;padding: 10px 20px 10px 20px"> Skontaktuj się z nami! </h1>
+				<h2> Odwiedź nas osobiście: </h2>
+					<div id="mapa">
+						<img src="mapa.jpg" alt="mapa" style="float:left;">
+						<img src="real.jpg" alt="studio" style="float:left;">
+					</div>
+				<h2><i><br> Gabriela Narutowicza 11/12, 80-233 Gdańsk</i></h2>
+				<h2 style="padding-bottom:0px;"> Jesteśmy otwarci:</h2>
+				<p>
+					pon-pt: 10:00 - 17:30<br>
+					sob: 12:00 - 16:00<br>
+					niedz: na zamówienie
+				</p>
+				<h1 style="margin:0;padding:10px 20px 10px 20px;">Zadzwoń lub napisz:</h1>
+				<p>
+					tel: +48 123 123 123<br>
+					tel: (58) 123 12 12<br>
+					fax: +48 (12) 123 12 12 <br>
+					e-mail: kontakt@foto-studio-ms.com<br>
+				</p>
+				<h2> lub online:</h2>
+			</div>
+			
+			<div id="znajdznas" style="margin-top:0px;">
+				<p style="margin-top:0px;">
+					<b>Znajdziesz nas na: </b>
+				</p>
+				<a href="https://www.facebook.com/foto-stdio-ms/">
+					<img src="facebook.jpg"/>
+				</a>
+				<a href="https://youtube.com/foto-studio-msss/">
+					<img src="youtube.jpg"/>
+				</a>
+				<a href="https://plus.google.com/foto-studio-ms/">
+					<img src="google.jpg"/>
+				</a>
+				<a href="https://twitter.com/foto-studio-ms/">
+					<img src="twitter.jpg"/>
+				</a>
+				<a href="https://instagram.com/foto-studio-ms/">
+					<img src="instagram.jpg"/>
+				</a>
+				<p style="margin:0px;padding-top:10px;font-weight:600;">
+					<i>@<u>FOTO-STUDIO-MS</i></u>
+				</p>
+			</div>
+			
+			<div id="stopka">
+				<p>© 2022 FOTO-STUDIO-MS.pl </p>
+			</div>
+		</div> <!-- glowny -->
+	</body>
+</html>
+	
+	

@@ -1,0 +1,327 @@
+html {
+    margin:0;
+    padding:0px 0px 0px 0px;
+    background-image: linear-gradient(to bottom, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+	background-repeat: no-repeat;
+	background-size: cover;
+    color:#000;
+	font-family:sans-serif;
+	width:1518px;
+}
+
+body {
+	margin: 0;
+}
+
+#glowny {
+    margin:0 auto;
+    width:1400px;
+}
+  
+#naglowek {
+	background:black;
+	height:170px;
+}
+  
+#logo {
+	float:left;
+	width:150px;
+	height:150px;
+	margin: 0px 0px 0px 55px; 
+}
+
+#menu {
+	width:880px;
+	float:right;
+	margin: 65px 55px 0px 0px;
+}
+  
+#menu a:visited{
+	color:white;
+	text-decoration:none;
+}
+#menu a:hover{
+	color:white;
+    text-decoration:none;
+	background-color:grey;
+}
+  
+#menu a:link{
+	text-decoration:none;
+	color:white;
+}
+  
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul li {
+		float: center;
+		padding: 10px 30px 10px 30px;
+		font-size: 22px;
+		display: inline;
+		font-weight: 1000;
+		white-space: nowrap;
+	}
+
+#galeria1 {
+	float: left;
+	margin: 50px 55px 50px 55px;
+	width:240px;
+	height: 990px;
+}
+
+#galeria2 {
+	float: left;
+	margin: 50px 55px 50px 55px;
+	width:240px;
+	height: 990px;
+}
+
+#galeria3 {
+	float: left;
+	margin: 50px 55px 50px 55px;
+	width:240px;
+	height: 990px;
+}
+
+#galeria4 {
+	float: left;
+	margin: 50px 55px 50px 55px;
+	width:240px;
+	height: 990px;
+}
+
+.zdjecie {
+	margin: 10px 0;
+	width: 240px;
+	background: white;	
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid silver;	
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	transition: 0.5s all ease-in-out;
+	will-change: transform;
+	align-items: flex-start;
+}
+
+.zdjecie img {
+	flex-basis: 100%;
+	width: 200px;
+}
+
+.zdjecie figcaption {
+	margin-top: 10px;
+}
+
+.zdjecie:nth-child(even) {
+	transform: scale(0.8);
+}
+
+.zdjecie:hover {
+	transform: scale(1.1);
+}
+
+#kamera {
+	float:left;
+	width: 840px;
+	height:566px;
+}
+
+#spis {
+	text-align:center;
+	margin-top:0px;
+	padding-right:30px;
+	padding-left:30px;
+	padding-top:50px;
+	padding-bottom:0px;
+	background-image:url("spis.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	width:500px;
+	height:516px;
+	float:left;
+}
+
+#stopka {
+	padding-bottom: 20px;
+	text-align: center;
+	width:1400px;
+	background:rgb(99, 101, 105);
+	height:10px;
+	float:left;
+	margin:0px;
+}
+
+#stopka p {
+	margin:0;
+	padding: 3px 0px 3px 0px;
+	font-weight: 1000;
+}
+
+#tekst p {
+	height: 200px;
+	background-image:url("spis.jpg");
+	background-size:cover;
+	text-align:center;
+	padding:35px 50px 10px 50px;
+	font-size:30px;
+	margin:0;
+	font-weight: 700;
+}
+
+#galerie {
+	height:1090px;
+	background-image: url("tlo.jpg");
+	background-size:cover;
+	background-repeat: no-repeat; 
+}
+
+#cennik h1 {
+	text-align: center;
+}
+  
+#cennik table {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0px auto;
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	font-family:serif;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding:10px 5px;
+	word-break:normal;
+	background-color:#949494; 
+	text-align:center;
+	vertical-align:middle;
+}
+ 
+#cennik table td {
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	font-family:serif;
+	font-size:14px;
+	overflow:hidden;
+	padding:10px 5px;
+	word-break:normal;
+}
+  
+#cennik table th {
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	font-family:serif;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding:10px 5px;
+	word-break:normal;
+	background-color:#949494; 
+	text-align:center; 
+	vertical-align:middle;
+}
+  
+#cennik p {
+	text-align:center;
+	padding:0px;
+	text-shadow: 0 0 0.2em white,0 0 0.2em white;
+	font-weight:700;
+	font-size:25px;
+}
+  
+#cennik h1 {
+	text-shadow: 0 0 0.2em white,0 0 0.2em white;
+	font-size:45px;
+	font-weight:1100;  
+}  
+  
+#onas p {
+	text-align:center;
+	margin:50px 100px 60px 100px;
+	font-size:22px;
+	line-height:1cm;
+	color:black;
+	text-shadow: 0 0 0.5em white;
+	font-weight:650;
+}
+
+#foto {
+	text-align:center;
+	margin-bottom:17px;
+}
+  
+#znajdznas {
+	text-align:center;
+	font-size:20px;
+	font-family:sans-serif;
+	color:white;
+	height:200px;
+	margin: 25px 0px 0px 0px;
+	background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 100%);
+}
+  
+#znajdznas p {
+	padding-top: 20px;
+	padding-bottom:8px;
+}
+#znajdznas img {
+	padding:0px 15px 10px 15px;
+}
+
+#znajdznas a {
+	text-decoration:none;
+}
+  
+#kontakt {	
+	background-image:url("bialetlo.jpg");
+	text-align:center;
+	margin:0px 0px 0px 0px;
+	background-color:white;
+	height:auto;
+	font-family: sans;
+}
+  
+#kontakt h2 {
+	margin:0;
+	padding:5px 20px 20px 20px;
+}
+  
+#kontakt p {
+	font-size: 20px;
+	font-weight:600;
+}
+  
+#mapa {
+	height:245px;
+	text-align:center;
+}
+  
+#mapa img {
+	padding-left:39px;
+	padding-right:39px;
+}
+  
+#zegar {	
+	padding-left:25px;
+	padding-top:30px;
+	line-height:0.8cm;
+	font-size:18px;
+	margin:0px 0px 0px 0px;
+	height:140px;
+	width:180px;
+	text-align:center;
+	color:white;
+	font-weight:600;
+	float:left;
+}

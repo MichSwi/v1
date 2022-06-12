@@ -1,0 +1,101 @@
+<!DOCTYPE html >
+<html>
+	<head>	
+		<title>FOTO STUDIO MS</title>
+		
+		<link rel="icon" type="image/png-icon" href="logo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		
+		<meta charset="utf-8"/>
+		<meta name="Description" content="Strona główna"/>
+		<meta name="Keywords" content="MS FOTO STUDIO, FOTO STUDIO, fotografia, studio, studio fotograficzne, sesja, sesja zdjeciowa, fotograf"/>
+		<meta name="Author" content="Michał Święch"/>
+  
+		
+			<script>
+				function zegarek() {
+					var data = new Date();
+					var godzina = data.getHours();
+					var minuta = data.getMinutes();
+					var sekunda = data.getSeconds();
+					var dzien = data.getDate();
+					var dzienN = data.getDay();
+					var miesiac = data.getMonth();
+					var rok = data.getFullYear();
+           
+					if (minuta < 10) minuta = "0" + minuta;
+					if (sekunda < 10) sekunda = "0" + sekunda;
+           
+					var dni = new Array("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota");
+					var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+           
+					var pokazDate = "Dzisiaj jest " + dni[dzienN] + ', ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " roku.<br />Godzina " + godzina + ':' + minuta + ':' + sekunda;
+					document.getElementById("zegar").innerHTML = pokazDate;
+			
+					setTimeout(zegarek, 1000);            
+				}        
+			</script>
+	</head>
+	
+	<body onload="zegarek()">
+		<div id="glowny">		
+			<div id="menu">
+				<ul>
+					<li><a href="index.html" style:text-decoration:none;><u>Strona główna</u></a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="cennik.html">Cennik</a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+			<div id="naglowek">
+			
+				<div id="zegar">
+				</div>
+				
+				<div id="logo">
+					<a href="index.html">
+						<svg height="150" width="150" viewBox="0 0 300 300">
+							<rect x="50" y="50" rx="50" ry="50" width="200" height="200" style="fill:white;stroke:black;stroke-width:10;opacity:2" />
+							<circle cx="150" cy="150" r="70" stroke="black" stroke-width="10" fill="white" />
+							<circle cx="210" cy="74" r="10" stroke="black" stroke-width="0" fill="black" /> 
+							<circle cx="150" cy="150" r="50" stroke="black" stroke-width="5" fill="white" />  
+							<polygon points="150,160 100,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,160 200,150 150,140" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" /> 
+							<polygon points="150,200 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<polygon points="150,100 140,150 160,150" style="fill:black;stroke:white;stroke-width:0;fill-rule:full;" />
+							<text fill="White" font-size="30" font-family="serif"; x="30" y="290">FOTO STUDIO MS</text>
+						</svg>
+					</a>
+				</div>
+			</div>
+	
+			<div id="kamera">
+				<img src="kamera.jpg" alt="kamera"/>
+			</div>
+			
+			<div id="spis">
+				<h2>Wywołaj zdjęcia "od ręki"</h2>
+				<p>Potrzebujesz odbitki na już?<br>
+					Zapraszamy do skorzystania z naszego Fotokiosku.<br>
+					U nas wywołasz zdjęcia w 5 do 10 min na doskonałym papierze Fuji DP II.
+				</p>
+				<h2>Potrzebujesz zdjęcia do dokumentów?</h2>
+				<p>
+					Zapraszamy do naszego studia!<br>
+					Wykonujemy zdjęcia do każdego rodzaju dokumentów z retuszem w 15 do 30 min. <br>
+				</p>
+				<h2> Zdjęcia biznesowe i wizerunkowe? </h2>
+				<p>
+					Dla nas to żaden problem!<br>
+					Wykonujemy tego typu zdjęcia w podanej przez Ciebie rozdzielczości.<br>
+					Klient wybiera kilka ujęć, które później są poddawane obróbce, zatwierdzane przez klienta i wysyłane na maila.
+				</p>	
+			</div>
+			
+			<div id="stopka">
+				<p>© 2022 FOTO-STUDIO-MS.pl </p>
+			</div>
+		</div>
+	</body>
+</html>
